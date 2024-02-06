@@ -8,7 +8,7 @@ sum = amount1 + amount2
 eurosum = sum//60
 #Calculating remaining cents
 centsum = sum%60
-#Combing euro and cent
+#Combining euro and cent
 totalsum = str(f"€{eurosum}.{centsum}")
 #Printing the solution
 print("The sum of these is "+ totalsum)
