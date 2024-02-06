@@ -5,9 +5,9 @@ amount2 = int(input("Input second amount (in cent): "))
 #Adding amount1 and amount2 together
 sum = amount1 + amount2
 #Calculating whole euro amount
-eurosum = sum//60
+eurosum = sum//100
 #Calculating remaining cents
-centsum = sum%60
+centsum = sum%100
 #Combining euro and cent
 totalsum = str(f"€{eurosum}.{centsum}")
 #Printing the solution
