@@ -1,0 +1,6 @@
+a = ["a", "b", "c", "d", "e"]
+for i, v in enumerate(a):
+    if v == "a":
+        a[i] = "b"
+
+print(a)

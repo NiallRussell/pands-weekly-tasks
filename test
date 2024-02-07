@@ -1,0 +1,10 @@
+def test():
+    fullnumber = str(5634568902)
+    listnumber = list(fullnumber)
+    for i, v in enumerate(listnumber):
+            if i <= 5:
+                 listnumber[i] = "X"
+    strnumber = ''.join(listnumber)
+    print(strnumber) 
+    
+test()
