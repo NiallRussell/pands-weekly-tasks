@@ -11,7 +11,14 @@ total = 0
 
 #Checking there is an argument in the command line. The programme name is the first argument, 
 #so no argument is given when length is 1 or below- https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/
-if len(sys.argv) > 1:
+if len(sys.argv) <= 1:
+    print("No argument in command line")
+#Checking if the file name ends with ".txt"- https://www.grepper.com/answers/242311/check+if+file+is+txt+python
+elif not sys.argv[1].endswith(".txt"):
+    print ("Not a text file")
+#If argument exists and does not end with something other than '.txt', attempt to perform operation. 
+#However, file can still not exist as have just proved that argument ends with ".txt"
+else:
     #trying to open file and throwing an error message if does not exist
     #https://stackoverflow.com/questions/57007680/how-to-handle-the-exception-when-input-file-does-not-exists-in-python
     try: 
@@ -25,7 +32,7 @@ if len(sys.argv) > 1:
                 total = total + x
         #print total
         print(total)
+    # if file is not found, print error message
     except FileNotFoundError:
         print('File does not exist')
-else:
-    print("No argument in command line")
+
