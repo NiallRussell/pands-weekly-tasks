@@ -1,4 +1,5 @@
 # This program prompts the use to input two money amounts in cent, and prints the sum of these amounts in euro and cent
+#Author: Niall Russell
 
 #Prompting user to input first amount
 amount1 = int(input("Input first amount (in cent): "))
